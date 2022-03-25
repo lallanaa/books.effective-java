@@ -1,7 +1,7 @@
 # books.effective-java
 이펙티브 자바 공부
 
-#Chapter 2
+# Chapter 2
 ### Item1 : 생성자 대신 정적 팩터리 메서드를 고려하라
 - 10Page
   - Collections 객체의 의미
