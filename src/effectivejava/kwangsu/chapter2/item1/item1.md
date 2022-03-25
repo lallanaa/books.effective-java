@@ -19,14 +19,14 @@
  */
 static class UnmodifiableList<E> extends UnmodifiableCollection<E>
         implements List<E> {
-    private static final long serialVersionUID = -283967356065247728L;
+  private static final long serialVersionUID = -283967356065247728L;
 
-    final List<? extends E> list;
+  final List<? extends E> list;
 
-    UnmodifiableList(List<? extends E> list) {
-        super(list);
-        this.list = list;
-    }
+  UnmodifiableList(List<? extends E> list) {
+    super(list);
+    this.list = list;
+  }
 ```
 
 ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2ea844d3-9438-4ac4-9855-dd6a0840a0c3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220325%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220325T085707Z&X-Amz-Expires=86400&X-Amz-Signature=b05be200a11be8ea41c20b1f32eedf002220c7a7933ff9940ebffc2055667453&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
@@ -35,7 +35,7 @@ static class UnmodifiableList<E> extends UnmodifiableCollection<E>
 
 ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/60a576d2-3445-411d-9ac6-b0c0fcb24e41/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220325%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220325T085727Z&X-Amz-Expires=86400&X-Amz-Signature=0b317f26c84e425e6a4ef244a8c77ea2d5b080e54f6063659d2ec2955320cca6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-- 여기서 Collections를 얘기하는게 아니라 **“컬렉션 프레임워크”**를 얘기 하고 있다.
+- 여기서 Collections를 얘기하는게 아니라 **컬렉션 프레임워크**를 얘기 하고 있다.
 - 컬렉션 프레임 워크는 Collection 인터페이스를 구현한 모든 클래스를 가리킨다. (List,Set,Map.....)
 - API가 작아졌다는 말은 45개의 클래스를 공개 했으면 45개의 클래스에 대해 어떻게 생성하고 어떻게 사용 해야 되고 상속을 받아서 어떻게 또 구현 해야 되나 이런 고민을 했을텐데 공개 하지 않고
   Collections 내부에 45개를 숨기고 사용자는 그냥 가져다 씀으로 쉬워졌다는 얘기다.
