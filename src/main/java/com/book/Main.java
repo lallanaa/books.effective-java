@@ -1,4 +1,4 @@
-package effectivejava;
+package com.book;
 
 public class Main {
 
