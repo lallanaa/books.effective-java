@@ -1,4 +1,4 @@
-package effectivejava.juu.chapter2.item1;
+package com.book.effectivejava.juu.chapter2.item1;
 
 import java.util.Map;
 import java.util.TreeMap;

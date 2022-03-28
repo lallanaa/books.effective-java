@@ -1,6 +1,6 @@
-package effectivejava.kwangsu.chapter2.item1.money;
+package com.book.effectivejava.kwangsu.chapter2.item1.money;
 
-public class Dollar implements Money{
+public class Dollar implements Money {
 
     long amount;
 

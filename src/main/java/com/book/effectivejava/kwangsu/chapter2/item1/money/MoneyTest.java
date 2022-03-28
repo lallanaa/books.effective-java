@@ -1,4 +1,4 @@
-package effectivejava.kwangsu.chapter2.item1.money;
+package com.book.effectivejava.kwangsu.chapter2.item1.money;
 
 
 class MoneyTest {

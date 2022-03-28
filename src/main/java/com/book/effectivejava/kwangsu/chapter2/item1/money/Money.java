@@ -1,4 +1,5 @@
-package effectivejava.kwangsu.chapter2.item1.money;
+package com.book.effectivejava.kwangsu.chapter2.item1.money;
+
 
 public interface Money {
     long getAmount();
