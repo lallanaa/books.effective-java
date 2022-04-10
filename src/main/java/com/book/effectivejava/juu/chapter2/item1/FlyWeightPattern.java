@@ -5,8 +5,8 @@ import java.util.TreeMap;
 
 public class FlyWeightPattern {
 	public static void main(String[] args) {
-		//flyWeightTest();
-		stringTest();
+		flyWeightTest();
+		//stringTest();
 	}
 
 	private static void flyWeightTest() {
