@@ -2,7 +2,7 @@ package com.book.effectivejava.hee.chapter2.item2.hierarchicalbuilder;
 
 import lombok.Builder;
 
-@Builder
+//@Builder
 public class Calzone extends Pizza {
     private final boolean sauseInside;
 
