@@ -1,6 +1,7 @@
 package com.book.effectivejava.hee.chapter2.item3.staticFactory;
 
-public class Elvis {
+public class
+Elvis {
     private static final Elvis INSTANCE = new Elvis(); // 정적 팩토리 : 새로운 객체를 생성하는 곳!?
     private Elvis() {}
     public static Elvis getInstance() { // 정적 팩토리 메소드 : 정적 팩토리를 리턴해주는 메소드?!

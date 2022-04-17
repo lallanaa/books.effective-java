@@ -1,4 +1,4 @@
-package com.book.effectivejava.juu.chapter2.item3;
+package com.book.effectivejava.juu.chapter2.item3.field;
 
 public class MockElvis implements IElvis {
 	@Override
