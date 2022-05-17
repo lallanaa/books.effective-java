@@ -2,6 +2,7 @@ package com.book.effectivejava.hee.chapter2.item5.dependencyinjection;
 
 import com.book.effectivejava.hee.chapter2.item5.DefaultDictionary;
 import com.book.effectivejava.hee.chapter2.item5.IDictionary;
+import org.springframework.stereotype.Component;
 
 import javax.swing.plaf.SplitPaneUI;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.function.Supplier;
 //의존성주입을 사용하여 만든 클래스 :
 //주입한 Dictionary 가 인터페이스이면!
 //Dictionary의 구현체가 변경되어도, 아래 클래스 안의 모든 코드를 재사용할 수 있다.
+@Component
 public class SpellChecker {
 
     //의존성주입
