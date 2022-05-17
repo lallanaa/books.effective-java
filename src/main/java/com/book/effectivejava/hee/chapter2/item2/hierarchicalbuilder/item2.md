@@ -1,5 +1,15 @@
 # [Item2] 생성자에 매개변수가 많다면 빌더를 고려하라.
 
+### POINT
+``` 
+Item2 을 제대로 이해하기 위해서 알아야 할 부분
+- 자바빈즈, 게터, 세터
+- 객체 얼리기 (freezing)
+- 빌더패턴
+- IllegalArgumentException
+- 가변인수 매개변수를 여러 개 사용할 수 있다.
+```
+
 ###선택 매개변수가 많을 때의 대응방법
 
 1. 점층적 생성자 패턴 (telescoping constructor pattern) - 확장하기 어렵다!
