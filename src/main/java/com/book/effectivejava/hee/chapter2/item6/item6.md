@@ -53,4 +53,16 @@ Pattern.compile 함수가 유한상태머신을 사용하는 알고리즘이여�
 > @Deprecated
 >    * 컴파일 시 경고 메시기를 통해 사용 자제를 권장하는 API 라는 것을 클라이언트에게 알려줄 수 있다.
 > @deprecated
->    * 
+>    * 문서화(Javadoc)에 사용해, 왜 해당 API 사용을 지양하며, 그 대신 권장하는 API 가 어떤 것인지 표기
+
+#### 완벽공략 2. 정규표현식
+> 정규표현식이 어떤 부분에서 사용되는지, 내부적으로 Pattern이 쓰이는 곳
+> * String.matches(String regex)
+> * String.split(String regex)
+>  * 대안, Pattern.compile(regex).split(str)
+> * String.replace*(String regex, String replacement)
+>  * 대안, Pattern.compile(regex).matcher(str).replaceAll(repl)
+
+String.split 의 경우 매개변수로 한 글자의 String, 즉 Char 가 들어오면    
+String API 의 split 에서 fastpath 를 통해 매개변수가 Pattern.compile(regex) 되지 않고 빠르게 실행된다.   
+한 글자 이상의 String 매개변수인 경우 Pattern.compile 을 거치므로 재사용 해야함
